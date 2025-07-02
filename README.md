@@ -13,12 +13,12 @@
 go mod download
 ```
 
-- Create your .env with DATABASE_URL
+- Create your .env with DATABASE_URL and MEMCAHCED_URL
 - Using docker to run memcached:
 ```
 docker run \
   -d \
-  -p 11211:11211 \
+  -p {YOUR_PORT}:11211 \
   memcached:1.6.9-alpine
 ```
 

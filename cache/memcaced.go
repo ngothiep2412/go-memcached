@@ -4,6 +4,7 @@ import (
 	"bytes"
 	"encoding/gob"
 	"main/database"
+	"os"
 	"time"
 
 	"github.com/bradfitz/gomemcache/memcache"
@@ -14,8 +15,7 @@ type Client struct {
 }
 
 func NewMemCached() (*Client, error) {
-
-	client := memcache.New("localhost:11211")
+	client := memcache.New(os.Getenv("MEMCACHED_URL"))
 
 	if err := client.Ping(); err != nil {
 		return nil, err
