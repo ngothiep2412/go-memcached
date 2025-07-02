@@ -1,0 +1,48 @@
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Go build artifacts
+*.out
+*.a
+*.o
+
+# Temporary files
+*.log
+*.tmp
+
+# Directories
+bin/
+obj/
+
+# Dependency directories
+vendor/
+
+# Go modules cache
+/go/pkg/mod/
+/go/bin/
+/go/src/
+
+# Go test caches
+*.test
+*.cover
+
+# IDE/editor-specific files
+.vscode/
+.idea/
+*.iml
+*.swp
+*.swo
+
+# macOS-specific
+.DS_Store
+
+# Windows-specific
+Thumbs.db
+desktop.ini
+
+# Environment files
+*.env
