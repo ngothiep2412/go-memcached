@@ -41,7 +41,7 @@ func (c *Client) GetUser(mssv string) (database.User, error) {
 	var res database.User
 
 	if err := gob.NewDecoder(b).Decode(&res); err != nil {
-		return database.User{}, nil
+		return database.User{}, err
 	}
 
 	return res, nil
